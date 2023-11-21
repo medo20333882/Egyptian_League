@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="583.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adv_ff.AddController">
+   <tabs>
+      <Tab text="Player">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="back" layoutX="482.0" mnemonicParsing="false" onAction="#BackToMain" prefHeight="40.0" prefWidth="110.0" text="Return" />
+                  <Label layoutX="3.0" layoutY="83.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Name of the player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="231.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Weight of player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="161.0" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC;" text="Height of player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="300.0" layoutY="82.0" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC;" text="Position of Player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="300.0" layoutY="231.0" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC;" text="Number of player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="299.0" layoutY="161.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Current team">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="position" layoutX="482.0" layoutY="92.0" prefHeight="34.0" prefWidth="55.0" />
+                  <TextField fx:id="height" layoutX="212.0" layoutY="176.0" onKeyTyped="#checkinput3" prefHeight="34.0" prefWidth="48.0" promptText="In cm" />
+                  <Button layoutX="534.0" layoutY="295.0" mnemonicParsing="false" onAction="#add_player" prefHeight="23.0" prefWidth="54.0" text="Add" />
+                  <TextField fx:id="weight" layoutX="212.0" layoutY="241.0" onKeyTyped="#checkinput2" prefHeight="34.0" prefWidth="48.0" promptText="In kg" />
+                  <TextField fx:id="number" layoutX="499.0" layoutY="241.0" onKeyTyped="#checkinput1" prefHeight="34.0" prefWidth="48.0" />
+                  <TextField fx:id="name" layoutX="185.0" layoutY="94.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="team" layoutX="472.0" layoutY="173.0" prefHeight="30.0" prefWidth="102.0" />
+                  <ImageView fitHeight="24.0" fitWidth="21.0" layoutX="4.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@139848-egypt-flag-png-free-photo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Referee">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="back2" layoutX="489.0" mnemonicParsing="false" onAction="#BackToMain" prefHeight="40.0" prefWidth="110.0" text="Return" />
+                  <Label layoutX="24.0" layoutY="70.0" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: #DCDCDC;" text="Name of the Referee">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="refname" layoutX="229.0" layoutY="82.0" prefHeight="30.0" prefWidth="102.0" />
+                  <Label layoutX="32.0" layoutY="230.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Weight of player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="refweight" layoutX="244.0" layoutY="240.0" onAction="#checkinput1" onKeyTyped="#checkinput2" prefHeight="34.0" prefWidth="48.0" promptText="In kg" />
+                  <Label layoutX="32.0" layoutY="151.0" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC;" text="Height of player">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="refheight" layoutX="244.0" layoutY="161.0" onAction="#checkinput2" onKeyTyped="#checkinput3" prefHeight="34.0" prefWidth="48.0" promptText="In cm" />
+                  <Button layoutX="528.0" layoutY="295.0" mnemonicParsing="false" onAction="#add_referee" prefHeight="23.0" prefWidth="54.0" text="Add" />
+                  <ImageView fitHeight="24.0" fitWidth="21.0" layoutX="4.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@139848-egypt-flag-png-free-photo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Match">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="back3" layoutX="489.0" mnemonicParsing="false" onAction="#BackToMain" prefHeight="40.0" prefWidth="110.0" text="Return" />
+                  <Label layoutX="14.0" layoutY="57.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Stadium">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="305.0" layoutY="211.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Referee of match">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="211.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Name of Team2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="305.0" layoutY="57.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Date of match">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="133.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Name of Team1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="305.0" layoutY="133.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Time of match">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="stadium_name" layoutX="187.0" layoutY="70.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="first_team" layoutX="187.0" layoutY="146.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="second_team" layoutX="187.0" layoutY="224.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="date" layoutX="478.0" layoutY="70.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="time" layoutX="478.0" layoutY="146.0" prefHeight="30.0" prefWidth="102.0" />
+                  <TextField fx:id="matchrefree" layoutX="478.0" layoutY="224.0" prefHeight="30.0" prefWidth="102.0" />
+                  <Button layoutX="527.0" layoutY="295.0" mnemonicParsing="false" onAction="#add_match" prefHeight="23.0" prefWidth="54.0" text="Add" />
+                  <ImageView fitHeight="24.0" fitWidth="21.0" layoutX="1.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@139848-egypt-flag-png-free-photo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Team">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="back1" layoutX="489.0" mnemonicParsing="false" onAction="#BackToMain" prefHeight="40.0" prefWidth="110.0" text="Return" />
+                  <Label layoutX="113.0" layoutY="77.0" prefHeight="54.0" prefWidth="170.0" style="-fx-background-color: #DCDCDC;" text="Name of the Team">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="namet" layoutX="301.0" layoutY="89.0" prefHeight="30.0" prefWidth="102.0" />
+                  <Button layoutX="528.0" layoutY="295.0" mnemonicParsing="false" onAction="#add_team" prefHeight="23.0" prefWidth="54.0" text="Add" />
+                  <ImageView fitHeight="24.0" fitWidth="21.0" layoutX="1.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@139848-egypt-flag-png-free-photo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
